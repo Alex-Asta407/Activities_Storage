@@ -48,10 +48,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
             return true;
+        } else if (item.getItemId() == R.id.name_note) {
+            Intent intent = new Intent(this, NoteNameActivity.class);
+            startActivity(intent);
+
+            return true;
         }
         return false;
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
